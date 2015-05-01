@@ -34,7 +34,7 @@
 	<a class="navbar-brand" href="<txp:link_to_home />"><txp:site_name /></a>
 	</div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	<txp:section_list wraptag="ul" class="nav navbar-nav navbar-right" exclude="widgets, pages" break="">
+	<txp:section_list wraptag="ul" class="nav navbar-nav navbar-right" exclude="" break="">
 	<li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
 	<txp:section title="1" link="1" />
 	</li>

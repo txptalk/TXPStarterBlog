@@ -2,7 +2,9 @@
 A Textpattern CMS Blog Theme.
 
 Version: 0.1 / 2015-05-01
+
 Textpattern CMS version: 4.5.7 tested and approved
+
 Made by: txptalk.com
 
 ## Necessary plugins
@@ -17,6 +19,9 @@ This theme comes _as is_. You use it at your own risk. It’s highly recommend t
 
 ### Credits
 Andy Carter for *arc_meta*
+
 Bootstrap
+
 FontAwesome
+
 Textpattern CMS

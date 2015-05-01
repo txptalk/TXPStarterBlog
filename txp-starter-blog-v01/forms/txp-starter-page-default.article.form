@@ -1,0 +1,16 @@
+<div class="post">
+	<txp:if_article_image>
+	<div class="post-image">
+		<txp:article_image class="img-responsive center-block" />
+	</div>
+	</txp:if_article_image>
+	<div class="post-inner">
+		<h1><txp:title /></h1>
+		<txp:if_excerpt>
+		<div class="excerpt">
+			<txp:excerpt />
+		</div>
+		</txp:if_excerpt>
+		<txp:body />
+	</div>
+</div>

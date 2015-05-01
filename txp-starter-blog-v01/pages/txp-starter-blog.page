@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<txp:arc_meta_title />
+<txp:arc_meta_description />
+<txp:arc_meta_robots />
+<txp:arc_meta_keywords />
+<txp:arc_meta_canonical />
+<txp:arc_meta_open_graph />
+<txp:arc_meta_twitter_card />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:700" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700" />
+<txp:css format="link" name="txp-starter-blog" />
+<link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+<link rel="sitemap" href="/sitemap.xml" />
+</head>
+<body>
+
+<div id="blog-head">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="<txp:link_to_home />"><txp:site_name /></a>
+	</div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<txp:section_list wraptag="ul" class="nav navbar-nav navbar-right" exclude="widgets, pages" break="">
+	<li<txp:if_section name='<txp:section />'> class="active"</txp:if_section>>
+	<txp:section title="1" link="1" />
+	</li>
+	</txp:section_list>
+	</div>
+	</div>
+	</nav>
+</div>
+
+<div id="blog-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8" id="main">
+				<txp:if_individual_article>
+				<txp:article form="txp-starter-article-default" />
+				<txp:else />
+				<txp:if_section name="default">
+				<txp:else />
+				<txp:article form="txp-starter-section-intro" limit="1" status="5"/>
+				</txp:if_section>
+				<txp:article form="txp-starter-article-default-teaser" limit="5" sort="Posted DESC"/>
+				<ul class="pager">
+					<txp:variable name="prev" value='<txp:older />' />
+					<txp:variable name="next" value='<txp:newer />' />
+					<txp:if_variable name="prev" value="">
+					<txp:else />
+					<li class="previous"><a href="<txp:older />"><span aria-hidden="true">&larr;</span> <txp:text item="older" /></a></li>
+					</txp:if_variable>
+					<txp:if_variable name="next" value="">
+					<txp:else />
+					<li class="next"><a href="<txp:newer />"><txp:text item="newer" /> <span aria-hidden="true">&rarr;</span></a></li>
+					</txp:if_variable>
+				</ul>
+				</txp:if_individual_article>
+			</div>
+			<div class="col-md-4" id="side">
+				<div class="sidebar">
+					<div class="widget about">
+						<txp:output_form form="txp-starter-about" />
+					</div>
+					<div class="widget">
+						<h4><txp:text item="recent_articles" /></h4>
+						<ul class="list-unstyled">
+							<txp:article_custom section="blog,journal,news" limit="10" form="txp-starter-recent-articles" sort="Posted DESC" />
+						</ul>
+					</div>
+					<div class="widget social">
+						<h4>Connect!</h4>
+						<txp:output_form form="txp-starter-social" />
+					</div>
+					<txp:article_custom section="widgets" status="5" form="txp-starter-widget-default" sort="Posted DESC" limit="9999" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<div id="blog-footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6">
+				<div class="about">
+					<txp:output_form form="txp-starter-about" />
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="legal">
+					<h4>Legal</h4>
+					<txp:linklist category="legal" wraptag="ul" break="li" class="list-unstyled" form="txp-starter-linklist-nofollow" limit="9999" />
+				</div>
+			</div>
+			<div class="col-md-4">
+				<txp:output_form form="txp-starter-theme-credits" />
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="copyright">
+					&copy; 2015 <txp:site_name /> - <txp:site_slogan />
+				</div>
+				<txp:output_form form="txp-starter-social" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+$('a[rel~="external"]').attr('target', '_blank');
+</script>
+</body>
+</html>

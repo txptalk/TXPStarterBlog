@@ -1,0 +1,1 @@
+<li><a href="<txp:permlink />" title="<txp:title />"><txp:title /></a> <small><txp:posted /></small></li>

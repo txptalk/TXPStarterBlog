@@ -1,0 +1,13 @@
+<div class="social">
+<a href="http://www.dribbble.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-dribbble"></i><span class="sr-only"> dribbble</span></a>
+<a href="http://www.facebook.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-facebook"></i><span class="sr-only"> Facebook</span></a>
+<a href="http://plus.google.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-google-plus"></i><span class="sr-only"> Google+</span></a>
+<a href="http://www.pinterest.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-pinterest"></i><span class="sr-only"> Pinterest</span></a>
+<a href="http://www.reddit.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-reddit"></i><span class="sr-only"> Reddit</span></a>
+<a href="http://www.stumbleupon.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-stumbleupon"></i><span class="sr-only"> Stumbleupon</span></a>
+<a href="http://www.tumblr.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-tumblr"></i><span class="sr-only"> tumblr</span></a>
+<a href="http://www.twitter.com/" rel="external nofollow"><i class="fa fa-fw fa-lg fa-twitter"></i><span class="sr-only"> Twitter</span></a>
+
+<!-- -->
+<p>You can edit the social links within the <a href="/textpattern/index.php?event=form&step=form_edit&name=txp-starter-social" target="_blank"><strong>txp-starter-social</<strong></a> form.</p>
+</div>

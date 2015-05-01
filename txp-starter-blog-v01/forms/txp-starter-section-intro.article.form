@@ -1,0 +1,5 @@
+<div class="section-intro">
+<h1><txp:title /></h1>
+<txp:if_excerpt><div class="excerpt"><txp:excerpt /></div></txp:if_excerpt>
+<txp:body />
+</div>

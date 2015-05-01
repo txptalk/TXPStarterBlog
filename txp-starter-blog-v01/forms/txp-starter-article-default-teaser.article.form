@@ -1,0 +1,23 @@
+<div class="post post-teaser">
+	<txp:if_article_image>
+	<div class="post-image">
+		<a href="<txp:permlink />" rel="nofollow" title="<txp:title />"><txp:article_image class="img-responsive center-block" /></a>
+	</div>
+	</txp:if_article_image>
+	
+	<div class="post-inner">
+		<h2><a href="<txp:permlink />" title="<txp:title />"><txp:title /></a></h2>
+		<div class="post-meta">
+			<span class="date"><i class="fa fa-fw fa-calendar"></i> <txp:text item="published_at" />: <strong><txp:posted /></strong></span>
+			<span class="author"><i class="fa fa-fw fa-user"></i> <txp:text item="author" />: <strong><txp:author /></strong></span>
+		</div>
+		<txp:if_excerpt>
+		<div class="excerpt">
+			<txp:excerpt />
+		</div>
+		<p><a href="<txp:permlink />" class="btn btn-success" rel="nofollow" title="<txp:title />"><txp:text item="more" />...</a></p>
+		<txp:else />
+		<txp:body />
+		</txp:if_excerpt>
+	</div>
+</div>

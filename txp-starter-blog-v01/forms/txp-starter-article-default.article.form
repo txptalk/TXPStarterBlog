@@ -1,0 +1,30 @@
+<ol class="breadcrumb">
+	<li><a href="<txp:link_to_home />" title="<txp:site_name /> - <txp:site_slogan />"><i class="fa fa-fw fa-home"></i></a></li>
+	<li><a href="<txp:link_to_home /><txp:section />/" title="<txp:section title='1' />"><txp:section title="1" /></a></li>
+	<txp:if_article_category>
+	<txp:if_article_category number="1"><li><txp:category1 title="1" link="1" /></li></txp:if_article_category>
+	<txp:if_article_category number="2"><li><txp:category2 title="1" link="1" /></li></txp:if_article_category>
+	</txp:if_article_category>
+	<li class="active"><txp:title /></li>
+</ol>
+<div class="post">
+	<txp:if_article_image>
+	<div class="post-image">
+		<txp:article_image class="img-responsive center-block" />
+	</div>
+	</txp:if_article_image>
+	<div class="post-inner">
+		<h1><txp:title /></h1>
+		<div class="post-meta">
+			<span class="date"><i class="fa fa-fw fa-calendar"></i> <txp:text item="published_at" />: <strong><txp:posted /></strong></span>
+			<span class="author"><i class="fa fa-fw fa-user"></i> <txp:text item="author" />: <strong><txp:author /></strong></span>
+		</div>
+		<txp:if_excerpt>
+		<div class="excerpt">
+			<txp:excerpt />
+			<hr />
+		</div>
+		</txp:if_excerpt>
+		<txp:body />
+	</div>
+</div>

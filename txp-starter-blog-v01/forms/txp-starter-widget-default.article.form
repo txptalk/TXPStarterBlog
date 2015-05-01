@@ -1,0 +1,5 @@
+<div class="widget">
+	<h4><txp:title /></h4>
+	<txp:if_excerpt><txp:excerpt /></txp:if_excerpt>
+	<txp:body />
+</div>

@@ -12,7 +12,7 @@ Made by: txptalk.com
 http://andy-carter.com/txp/arc_meta
 
 *cxc_templates*
-https://code.google.com/p/cxc-templates/
+https://github.com/yauh/txp-cxc-templates
 
 ## Usage
 This theme comes _as is_. You use it at your own risk. It’s highly recommend to backup your database *before* installing this theme. Feel free to use this theme wherever you want.

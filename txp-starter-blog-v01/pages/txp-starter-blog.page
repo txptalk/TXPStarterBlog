@@ -103,8 +103,8 @@
 			</div>
 			<div class="col-md-2">
 				<div class="legal">
-					<h4>Legal</h4>
-					<txp:linklist category="legal" wraptag="ul" break="li" class="list-unstyled" form="txp-starter-linklist-nofollow" limit="9999" />
+					<h4>Textpattern</h4>
+					<txp:linklist category="textpattern" wraptag="ul" break="li" class="list-unstyled" form="txp-starter-linklist-nofollow" limit="9999" />
 				</div>
 			</div>
 			<div class="col-md-4">
